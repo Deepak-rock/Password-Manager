@@ -2,13 +2,8 @@ import './index.css'
 
 const PasswordList = props => {
   const {passwordItemDetails, deleteButton, isShowPassword} = props
-  const {
-    website,
-    username,
-    password,
-    initialContainer,
-    id,
-  } = passwordItemDetails
+  const {website, username, password, initialContainer, id} =
+    passwordItemDetails
   const initialClassName = `initail-container ${initialContainer}`
   const initail = website.slice(0, 1)
   const onClickDelete = () => {
@@ -38,12 +33,16 @@ const PasswordList = props => {
             {passwordisthere}
           </div>
         </div>
-        <button className="delete-button" type="button" onClick={onClickDelete}>
+        <button
+          className="delete-button"
+          type="button"
+          onClick={onClickDelete}
+          data-testid="delete"
+        >
           <img
             src="https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png"
             alt="delete"
             className="delete-icon"
-            data-testid="delete"
           />
         </button>
       </div>

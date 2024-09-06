@@ -82,12 +82,8 @@ class PasswordInput extends Component {
   }
 
   renderPasswordlist = () => {
-    const {
-      passwordList,
-      initialContainer,
-      searchInput,
-      isShowPassword,
-    } = this.state
+    const {passwordList, initialContainer, searchInput, isShowPassword} =
+      this.state
     const filteredSearchResult = passwordList.filter(searchItem =>
       searchItem.website.toLowerCase().includes(searchInput.toLowerCase()),
     )
@@ -193,11 +189,9 @@ class PasswordInput extends Component {
         </div>
         <div className="password-list">
           <div className="header">
-            <div>
-              <h3 className="title">
-                Your Passwords
-                <span className="count">{passwordList.length}</span>
-              </h3>
+            <div className="title-count">
+              <h3 className="title">Your Passwords</h3>
+              <p className="count">{passwordList.length}</p>
             </div>
             <div className="search-input-container">
               <img
@@ -208,7 +202,7 @@ class PasswordInput extends Component {
               <input
                 value={searchInput}
                 className="search-input"
-                type="text"
+                type="search"
                 placeholder="Search"
                 onChange={this.onChangeSearchInput}
               />
@@ -222,9 +216,9 @@ class PasswordInput extends Component {
               className="checkbox-input"
               onClick={this.toggleShowPassword}
             />
-            <p className="show-password" htmlFor="checkbox">
-              Show Password
-            </p>
+            <label className="show-password" htmlFor="checkbox">
+              Show passwords
+            </label>
           </div>
           {this.renderPasswordlist()}
         </div>
