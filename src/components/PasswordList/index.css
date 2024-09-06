@@ -1,0 +1,94 @@
+.amber {
+  background-color: #f59e0b;
+}
+.blue {
+  background-color: #0b69ff;
+}
+.orange {
+  background-color: #f97316;
+}
+.emerald {
+  background-color: #10b981;
+}
+.green {
+  background-color: #14b8a6;
+}
+.teal {
+  background-color: #0ea5e9;
+}
+.red {
+  background-color: #b91c1c;
+}
+.grey {
+  background-color: #64748b;
+}
+.purple {
+  background-color: #7683cb;
+}
+.item-container {
+  padding: 0 10px;
+  border: 1px solid #7683cb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+.initail-container {
+  color: #ffffff;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.initial-and-content-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile-initial {
+  font-size: 18px;
+  font-family: 'roboto';
+  font-weight: 600;
+}
+p {
+  line-height: 10px;
+}
+.website {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'roboto';
+  font-weight: 500;
+}
+.username {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'roboto';
+}
+.password {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'roboto';
+}
+.delete-button {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.delete-icon {
+  width: 25px;
+  height: 25px;
+}
+.star {
+  height: 14px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .item-container {
+    width: 100%;
+  }
+}

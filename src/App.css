@@ -10,3 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.app-container {
+  background: linear-gradient(#9ba9eb, #c3caea);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}

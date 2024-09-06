@@ -1,0 +1,223 @@
+.input-page-container {
+  margin: 20px 0;
+  background-color: #5763a5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px 20px 20px;
+  border-radius: 15px;
+}
+.image-container {
+  width: 100%;
+}
+.input-page-img-sm {
+  width: 100%;
+  padding: 20px;
+}
+.input-page-img-lg {
+  display: none;
+}
+.input-container {
+  padding: 20px;
+  background-color: #454f84;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+.heading {
+  color: #f8fafc;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  padding: 0 0 10px 0;
+}
+.input-icon-container {
+  margin: 8px 0;
+  background-color: #f8fafc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 45px;
+}
+.input-icon {
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+}
+.input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  min-height: 45px;
+  padding: 0 0 0 10px;
+  border-left: 2px solid #b6c3ca;
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: #94a3b8;
+  cursor: pointer;
+}
+.input::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.add-button {
+  align-self: flex-end;
+  background-color: #0b69ff;
+  border-radius: 5px;
+  padding: 4px 30px;
+  border: none;
+  outline: none;
+  color: #f8fafc;
+  font-size: 16px;
+  font-family: 'Roboto';
+  margin: 20px 0;
+  cursor: pointer;
+}
+.password-list {
+  margin: 20px 0;
+  background-color: #5763a5;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 40px 20px;
+  border-radius: 15px;
+  min-height: 50vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  color: #f8fafc;
+  font-size: 16px;
+  font-family: 'Roboto';
+}
+.count {
+  border: 1px solid #b6c3ca;
+  padding: 4px 18px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0 10px;
+}
+.search-input-container {
+  background-color: #f8fafc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.search-icon {
+  padding: 2px;
+  width: 25px;
+  height: 25px;
+}
+.search-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 25px;
+  padding: 0 0 0 5px;
+  border-left: 1px solid #b6c3ca;
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: #94a3b8;
+  cursor: pointer;
+}
+.search-input::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.line {
+  width: 100%;
+  border: 1px solid #94a3b8;
+}
+.checkbox-input-container {
+  align-self: flex-end;
+  display: flex;
+  gap: 5px;
+}
+.checkbox-input {
+  cursor: pointer;
+}
+.show-password {
+  color: #f8fafc;
+  font-size: 14px;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
+.no-password-img {
+  align-self: center;
+  width: 100%;
+}
+.no-password {
+  align-self: center;
+  color: #f8fafc;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Roboto';
+  margin: 20px 0 0 0;
+}
+.password-list-container {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .input-page-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+  }
+  .input-page-img-sm {
+    display: none;
+  }
+  .input-page-img-lg {
+    display: block;
+    order: 1;
+    width: 40%;
+    height: 40vh;
+  }
+  .input-container {
+    width: 50%;
+  }
+  .heading {
+    font-size: 26px;
+  }
+  .no-password-img {
+    width: 40%;
+    height: 30vh;
+  }
+  .password-list-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 996px) {
+  .input-page-container {
+    gap: 150px;
+  }
+  .input-page-img-lg {
+    width: 50%;
+    height: 50vh;
+  }
+  .input-container {
+    width: 40%;
+  }
+  .no-password-img {
+    width: 50%;
+    height: 40vh;
+  }
+}
